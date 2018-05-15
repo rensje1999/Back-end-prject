@@ -1,6 +1,0 @@
-C:\Users\Rens\Documents\Visual Studio 2015\Database\project\project\bin\Debug\project.exe.config
-C:\Users\Rens\Documents\Visual Studio 2015\Database\project\project\bin\Debug\project.exe
-C:\Users\Rens\Documents\Visual Studio 2015\Database\project\project\bin\Debug\project.pdb
-C:\Users\Rens\Documents\Visual Studio 2015\Database\project\project\obj\Debug\project.csprojResolveAssemblyReference.cache
-C:\Users\Rens\Documents\Visual Studio 2015\Database\project\project\obj\Debug\project.exe
-C:\Users\Rens\Documents\Visual Studio 2015\Database\project\project\obj\Debug\project.pdb

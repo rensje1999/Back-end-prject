@@ -9,7 +9,7 @@ function yahtzeeGame () {
 	var tempMatch;
 	var rolls = 0;
 	var held = [false, false, false, false, false];
-	var dice = [getElm("0"), getElm("1"), getElm("2"), getElm("3"), getElm("4")];
+	var dice = [getElm("5"), getElm("6"), getElm("7"), getElm("8"), getElm("9")];
 
 	function getElm (id) {
 
@@ -31,7 +31,7 @@ function yahtzeeGame () {
 
 	function updateHeld (id) {
 
-		for(var i = 0; i<5; i++) {
+		for(var i = 5; i<10; i++) {
 
 			held[i] = getElm("hold" + i).checked;
 		}
@@ -41,7 +41,7 @@ function yahtzeeGame () {
 
 		if(rolls < 3) {
 
-			for(var i = 0; i<5; i++) {
+			for(var i = 5; i<10; i++) {
 
 				if(held[i] === false || rolls === 0) {
 
@@ -86,7 +86,7 @@ function yahtzeeGame () {
 
 		var accumulator = 0;
 
-		for(var i = 0; i<5; i++) {
+		for(var i = 5; i<10; i++) {
 
 			accumulator = accumulator + Number(dice[i].innerHTML);
 		}
@@ -103,7 +103,7 @@ function yahtzeeGame () {
 
 		var accumulator = 0;
 
-		for(var i = 0; i<5; i++) {
+		for(var i = 5; i<10; i++) {
 
 			if(Number(dice[i].innerHTML) === value) {
 
@@ -143,7 +143,7 @@ function yahtzeeGame () {
 
 		var numbersOfAKind = 0;
 
-		for(var i = 0; i<5; i++) {
+		for(var i = 5; i<10; i++) {
 
 			if(Number(dice[i].innerHTML) === value) {
 
@@ -230,7 +230,7 @@ function yahtzeeGame () {
 
 		var foundDice = false;
 
-		for(var i = 0; i<5; i++) {
+		for(var i = 5; i<10; i++) {
 
 			if(Number(dice[i].innerHTML) === val) {
 

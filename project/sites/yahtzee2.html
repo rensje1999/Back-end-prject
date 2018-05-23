@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+<title>yahtzee2</title>
+		<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="Yahtzee.js"></script>
+		<link rel="stylesheet" type="text/css" href="Yahtzee.css">
+<style>
+
+body {
+    margin:0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+	width: 100%;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: orange;
+}
+</style>
+</head>
+<body>
+
+Totaale score: <span id="totalScore">0</span>
+
+		<br />
+		<br />
+
+		<span id="0" class="dice">0</span>
+		<span id="1" class="dice">0</span>
+		<span id="2" class="dice">0</span>
+		<span id="3" class="dice">0</span>
+		<span id="4" class="dice">0</span> <!-- 5 dobbelstenen -->
+		
+		<button id="roll">gooien</button>
+
+		<br />
+		<br />
+		
+		<input type="checkbox" id="hold0"></input>
+		<input type="checkbox" id="hold1"></input>
+		<input type="checkbox" id="hold2"></input>
+		<input type="checkbox" id="hold3"></input>
+		<input type="checkbox" id="hold4"></input> 
+		Vast houden
+
+		<br />
+		<br />
+
+		<table id="yahtzeeTable">
+			<tr>
+				<th>Categorie</th>
+				<th>Score</th>
+			</tr>
+			<tr>
+				<td id="ones" class="cell">Enen</td>
+				<td id="onesScore">-</td>
+			</tr>
+			<tr>
+				<td id="twos" class="cell">Tweeën</td>
+				<td id="twosScore">-</td>
+			</tr>
+			<tr>
+				<td id="threes" class="cell">Drieën</td>
+				<td id="threesScore">-</td>
+			</tr>
+			<tr>
+				<td id="fours" class="cell">Vieren</td>
+				<td id="foursScore">-</td>
+			</tr>
+			<tr>
+				<td id="fives" class="cell">Vijfen</td>
+				<td id="fivesScore">-</td>
+			</tr>
+			<tr>
+				<td id="sixes" class="cell">Zessen</td>
+				<td id="sixesScore">-</td>
+			</tr>
+			<tr>
+				<td id="upperSecBonus">Bonus </td>
+				<td id="upperSecBonusScore">-</td>
+			</tr>
+			<tr>
+				<td id="threeOfAKind" class="cell">Drie dezelfde</td>
+				<td id="threeOfAKindScore">-</td>
+			</tr>
+			<tr>
+				<td id="fourOfAKind" class="cell">Vier dezelfde</td>
+				<td id="fourOfAKindScore">-</td>
+			</tr>
+			<tr>
+				<td id="fullHouse" class="cell">Full House</td>
+				<td id="fullHouseScore">-</td>
+			</tr>
+			<tr>
+				<td id="smallStraight" class="cell">Kleine straat</td>
+				<td id="smallStraightScore">-</td>
+			</tr>
+			<tr>
+				<td id="largeStraight" class="cell">Grote straat</td>
+				<td id="largeStraightScore">-</td>
+			</tr>
+			<tr>
+				<td id="chance" class="cell">kans</td>
+				<td id="chanceScore">-</td>
+			</tr>
+			<tr>
+				<td id="yahtzee" class="cell">Yahtzee</td>
+				<td id="yahtzeeScore">-</td>
+			</tr>
+		</table>
+		
+	</body>
+</html>

@@ -8,7 +8,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="Yahtzee.js"></script>
-		<script type="text/javascript" src="Yahtzee2.js"></script>
 		<link rel="stylesheet" type="text/css" href="Yahtzee.css">
 <style>
 body {
@@ -58,9 +57,9 @@ li a:hover {
 <ul>
   <li><a href="../Yahtzee.html">Home</a></li>
   <li><a class="active" href="Yahnee.html">Yahtzee</a></li>
-  <li><a href="#wiezijnwij">wie zijn wij</a></li>
-  <li><a href="#planvanaanpak">Plan van aanpak</a></li>
-  <li><a href="#Activiteitsdiagram">Activiteitsdiagram</a></li>
+  <li><a href="wiezijnwij.html">wie zijn wij</a></li>
+  <li><a href="pva.html">Plan van aanpak</a></li>
+  <li><a href="Activiteitsdiagram.html">Activiteitsdiagram</a></li>
 </ul>
 
 <div class="row">
@@ -153,9 +152,95 @@ Totaale score: <span id="totalScore">0</span>
 				<td id="yahtzee" class="cell">Yahtzee</td>
 				<td id="yahtzeeScore">-</td>
 			</tr>
-		</table>
-	</div>
+			
 
+		</table>
+	
+	<br />
+			<br />
+					<!-- Trigger/Open The Modal -->
+			<button id="myBtn">Open regels van Yahtzee</button>
+
+					<!-- The Modal -->
+			<div id="myModal" class="modal">
+
+					<!-- Modal content -->
+			<div class="modal-content">
+			<span class="close">&times;</span>
+			<center> <b>Yahtzee</b> </center>
+			<br />
+				<p>Het spel Yahtzee kan alleen gespeeld worden èn met meerdere spelers, er is geen maximaal aan het aantal spelers. Wilt u het spel alleen spelen dan moet u proberen steeds een hogere totaalscore te behalen.<br />
+<br />
+<b> Doel van het spel:</b> <br />
+Doel van het spel is proberen combinaties met de dobbelstenen te gooien, zodanig dat ze passen in de 13 categorieën op het scoreblok en zo de hoogste score opleveren. U kunt één ronde spelen of een wedstrijd of toernooi (Bijvoorbeeld wie de hoogste score heeft na vijf rondes).<br />
+<br />
+<b>Het spel in het kort:</b><br />
+Als u aan de beurt bent, gooit u de dobbelstenen maximaal drie keer, om de hoogste score te behalen. Noteer uw score in één van de 13 scorevakjes: er zijn zes vakjes op de BOVENSTE HELFT (kenmerkend aan het aantal ogen van de dobbelsteen) van het scoreblad en zeven vakjes op de ONDERSTE HELFT (kenmerkend aan de combinaties van het aantal ogen van de dobbelsteen). De volgorde waarin u de vakjes invult bepaalt u zelf, maar er dient altijd een score ingevuld te worden. Heeft u 3 keer gegooid maar kunt u nergens een antwoord invullen dan dient u een vakje af te strepen of er een 0 in te zetten. Wanneer u alle dertien vakjes heeft ingevuld, telt u uw punten samen met eventuele bonuspunten op. De speler met het hoogste aantal punten in het vakje Totaal (dit kan per scoreblad verschillen) heeft gewonnen.<br />
+<br />
+<b>Dobbelen:</b> <br />
+Als eerste bepaalt u hoe u de score bijhoud. Zo kan één persoon van iedereen de score bijhouden of krijgt iedereen zijn eigen scoreblad.<br />
+Kies daarna iemand uit die mag beginnen (de jongste speler begint, allemaal een keer gooien en degene met de laagste/hoogste score begint…)<br />
+Zodra dit gedaan is begint de speler met dobbelen. De eerste beurt MOETEN alle vijf de dobbelstenen gegooid worden. Bij de 2e en 3e beurt kunnen alle dobbelstenen gegooid worden maar kunt u er ook voor kiezen om alleen die waarmee u uw geluk nog eens wilt beproeven. Uw derde worp bepaalt uw uiteindelijke score.<br /><br />
+
+<b>Punten score:</b><br />
+<b>Van de enen naar de zessen:</b> <br />
+Gooi één of meer enen, tel ze op en vul de score in in het speciale enen-vakje; gooi één of meer tweeën, tel ze op en vul de score in in het tweeën-vakje, enzovoorts (bijvoorbeeld 1, 1, 1, 4, 6 u noteert dan 3 in het vakje met enen)<br />
+<b>Three of a kind:</b> <br />
+Gooi drie dezelfde nummers en twee willekeurige nummers en telt hiervan het totaal op als score (bijvoorbeeld 3, 3, 3, 4, en 6; u noteert dan 19 in het vakje 3 of a kind)<br />
+<b>Carré:</b> <br />
+Gooi vier dezelfde nummers en 1 willekeurig ander nummer en telt hiervan het totaal op als score (bijvoorbeel 5, 5, 5, 5 en 1; u noteert dan 21 in het vakje Carré)<br />
+<b>Full house:</b> <br />
+Gooi twee dezelfde en drie dezelfde nummers en noteert 25 als score (bijvoorbeeld 3, 3, 3, 4 en 4)<br />
+<b>Kleine Straat:</b> <br />
+Gooi 4 opvolgende nummers (bijvoorbeeld 1, 2, 3, 4; u noteert 30 in het vakje Kleine Straat)<br />
+<b>Grote Straat:</b> <br />
+Gooi 5 opvolgende nummers (bijvoorbeeld 2, 3, 4, 5, 6; u noteert 40 in het vakje Grote Straat)<br />
+<b>Yahtzee:</b> <br />
+Gooi 5 dezelfde nummers (bijvoorbeeld 3, 3, 3, 3, 3 u noteert 50 in het vakje Yahtzee)<br />
+<b>Kans:</b> <br />
+Gebruik het Kans vakje wanneer u een combinatie heeft gegooid die u al heeft genoteerd, of wanneer u geen ander beschikbaar vakje kunt gebruiken (tel het totaal van de dobbelstenen)<br /><br />
+
+<b>De 35 bonuspunten: </b> <br />
+Als u 63 of meer punten scoort in de bovenste helft verdient u een bonus van 35 punten en noteert u dit in het vakje “bonus”.<br />
+<br />
+<b>Yahtzee bonus:</b> <br />
+U kunt een Yahtzee bonus scoren (=100 punten) indien u een tweede of meerdere keren Yahtzee gooit in eenzelfde spel. Voorwaarde is dat de eerste Yahtzee is genoteerd in het Yahtzee-vakje met een totaal van 50 punten en niet als een nul.<br />
+<br />
+<b>Winnaar:</b> <br />
+Winnaar is de speler met de meeste punten nadat alle spelers hun 13 vakjes hebben ingevuld en hun scores en bonuspunten hebben opgeteld. Wedstrijden kunt u het beste spelen in 5 rondes. De eerste speler die drie rondes wint, wint de wedstrijd.p><br />
+			</div>
+
+		</div>
+
+<script>
+		// Get the modal
+		var modal = document.getElementById('myModal');
+
+		// Get the button that opens the modal
+		var btn = document.getElementById("myBtn");
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal 
+		btn.onclick = function() {
+			modal.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		modal.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+			}
+		}
+</script>
+</div>	
+	
 
 	<div class="col-sm-6">
 

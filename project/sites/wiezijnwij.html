@@ -2,12 +2,54 @@
 <html>
 <head>
 <style>
+    input.Rens {
+    width: 300px;
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 150%;
+    background-color: #000cff;
+    color:white;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-left: 41%;
+    margin-right: 50%;
+        margin-top: 20%;
+    
+}
+    input.Rens:hover {
+    color:blanchedalmond;
+    background-color: #747aff;
+    border: 1px solid #fff;
+}
+      input.Brent {
+    width: 300px;
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 150%;
+    background-color: #000cff;
+    color:white;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-left: 41%;
+    margin-right: 50%;
+        
+        
+}
+    input.Brent:hover {
+    color:blanchedalmond;
+    background-color: #747aff;
+    border: 1px solid #fff;
+}
 body {
     margin: 0;
-    
+    background-image: url("img/bgg.png");
+    background-size: 80%;
     }
     .tekst {
     text-align: center;
+        color: white;
     }
 
 ul {
@@ -55,7 +97,15 @@ li a:hover {
   <li><a href="pva.html">Plan van aanpak</a></li>
   <li><a href="activiteitsdiagram.html">Activiteitsdiagram</a></li>
 </ul>
-   
+ <div class="tekst">
+<h1>Wie zijn wij</h1>
+<p>Wij zijn Brent Lucassen en Rens Koster.</p>
+<p>Wij zitten in het 2e leerjaar van het MBO.
+Wij doen de opleiding: applicatie ontwikkelaar.</p>
+</div>
+<input class="Rens" type="button" value="Bekijk de CV van Rens" onclick="window.location.href='index.html'" />
+
+<input class="Brent" type="button" value="Bekijk de CV van Brent" onclick="window.location.href='CVbrent.html'" />
 
 
 </body>

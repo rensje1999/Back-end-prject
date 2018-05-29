@@ -1,6 +1,6 @@
 window.onload = yahtzeeGame;
 
-function yahtzeeGame () {
+function yahtzeeGame() {
 
 	var upperSecAccumulator = 0;
 	var yahtzeeScore = 50;

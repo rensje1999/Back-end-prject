@@ -9,7 +9,7 @@ function yahtzeeGame() {
 	var tempMatch;
 	var rolls = 0;
 	var held = [false, false, false, false, false];
-	var dice = [getElm("0"), getElm("1"), getElm("2"), getElm("3"), getElm("4"),getElm("5"), getElm("6"), getElm("7"), getElm("8"), getElm("9")];
+	var dice = [getElm("0"), getElm("1"), getElm("2"), getElm("3"), getElm("4")];
 
 	function getElm (id) {
 
@@ -241,7 +241,7 @@ function yahtzeeGame() {
 
 		return foundDice;
 	};
-
+	
 	function checkStraightCombo(search) {
 
 		if(search[4] === undefined) { //Checking small straight combo
